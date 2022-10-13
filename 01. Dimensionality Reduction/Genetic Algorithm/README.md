@@ -18,13 +18,18 @@
 * Cut-off를 기준으로 Random number를 binary value로 변환 ex) cut-off = 0.5
 ![image](https://user-images.githubusercontent.com/80257035/195517060-a1a50e2c-5709-4c99-9cb9-ac7945962fe5.png)
 
+
+
 ### Step 2 : 각 염색체 선택 변수 별 모델 학습
 * Multivariate linear regression (MLP)라고 가정
 ![image](https://user-images.githubusercontent.com/80257035/195517480-962b10c2-0ca3-4178-a575-bc6b6c56c484.png)
 같은 방식으로 총 4개의 MLR을 학습함
 
+
+
 ### Step 3 : Fitness evaluation
 * Fitness Function : 어떤 chromosome이 더 좋은가를 평가하는 기준, Fitness values가 높을 수록 좋은 chromosomes
+
 ex) Fitness function = Adjusted $𝑅^2$
 ![image](https://user-images.githubusercontent.com/80257035/195517807-d4c36d85-c5e2-41a0-8fbf-263d131f42f6.png)
 
@@ -42,6 +47,8 @@ ex) 상위 50% 선택
  * Fitness values가 높았던 chromosome이 높은 확률을 가짐
 ![image](https://user-images.githubusercontent.com/80257035/195541350-5af9c8ee-b971-4ebb-ba7c-a0b16077bf85.png)
 
+
+
 ### Step 5 : Crossover & Mutation
 
 1️⃣ ***Crossover***
@@ -57,6 +64,7 @@ ex) 상위 50% 선택
 * 주의할 점 : 너무 큰 mutation rate를 사용하면 수렴하는 데 시간이 오래 걸림 (0.01정도가 좋음)
 
 ![image](https://user-images.githubusercontent.com/80257035/195542826-e1f6a96b-7766-4679-8784-bc45c8228ade.png)
+
 
 
 ### Step 6 : Find the Best Solution
