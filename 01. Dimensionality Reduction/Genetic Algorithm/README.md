@@ -23,7 +23,24 @@
 
 ### Step 3 : Fitness evaluation
 * Fitness Function : 어떤 chromosome이 더 좋은가를 평가하는 기준, Fitness values가 높을 수록 좋은 chromosomes
+ex) Fitness function = Adjusted $𝑅^2$
 ![image](https://user-images.githubusercontent.com/80257035/195517807-d4c36d85-c5e2-41a0-8fbf-263d131f42f6.png)
-* Fitness function = Adjusted $𝑅^2$
+
+### Step 4 : Selection
+* 현재 population 중 우수한 chromosome 선택하여 다음 세대의 population을 생산하는 단계
+* 1️⃣ Deterministic Selection
+ * 상위 N%의 chromosome만 선택됨
+ * 그 밑은 폐기
+ex) 상위 50% 선택
+![image](https://user-images.githubusercontent.com/80257035/195541185-94b5ce45-d1c7-40ac-bd9a-214ce41a5d06.png)
+
+* 2️⃣ Probabilistic Selection
+ * 모든 chromosome에게 유전자를 넘겨줄 수 있는 기회를 줌
+ * Fitness values가 높았던 chromosome이 높은 확률을 가짐
+![image](https://user-images.githubusercontent.com/80257035/195541350-5af9c8ee-b971-4ebb-ba7c-a0b16077bf85.png)
+
+
+
+
 
 
