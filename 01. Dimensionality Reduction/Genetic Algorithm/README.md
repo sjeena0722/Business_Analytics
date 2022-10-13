@@ -54,7 +54,7 @@ ex) 상위 50% 선택
 1️⃣ ***Crossover***
 
 ![image](https://user-images.githubusercontent.com/80257035/195542137-847ca4a4-8590-4030-bdb7-7bdd041282fb.png)
-
+(사진 출처 : https://post.naver.com/viewer/postView.nhn?volumeNo=22462557&memberNo=1474987)
 * Single Point Crossover Operator : crossover point가 1인 경우
 * Multi-Point Crossover Operator : crossover point가 2개 이상인 경우
 * Uniform Crossover Operator : random number 생성한 후 threshold보다 큰 것만 crossover
@@ -70,3 +70,5 @@ ex) 상위 50% 선택
 ### Step 6 : Find the Best Solution
 * 세대가 지나면서 높은 fitness value를 갖는 chromosome이 선택됨(=중요 변수들로 이루어진 부분 집합이 선택됨)
 ![image](https://user-images.githubusercontent.com/80257035/195543513-603f2f78-6202-4647-bfd2-ccb35fd67d62.png)
+
+
