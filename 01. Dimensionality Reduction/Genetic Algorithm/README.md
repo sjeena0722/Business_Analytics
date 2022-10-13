@@ -15,3 +15,15 @@
 
 * Cut-off를 기준으로 Random number를 binary value로 변환 ex) cut-off = 0.5
 ![image](https://user-images.githubusercontent.com/80257035/195517060-a1a50e2c-5709-4c99-9cb9-ac7945962fe5.png)
+
+### Step 2 : 각 염색체 선택 변수 별 모델 학습
+* Multivariate linear regression (MLP)라고 가정
+![image](https://user-images.githubusercontent.com/80257035/195517480-962b10c2-0ca3-4178-a575-bc6b6c56c484.png)
+같은 방식으로 총 4개의 MLR을 학습함
+
+### Step 3 : Fitness evaluation
+* Fitness Function : 어떤 chromosome이 더 좋은가를 평가하는 기준, Fitness values가 높을 수록 좋은 chromosomes
+![image](https://user-images.githubusercontent.com/80257035/195517807-d4c36d85-c5e2-41a0-8fbf-263d131f42f6.png)
+* Fitness function = Adjusted $𝑅^2$
+
+
