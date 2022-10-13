@@ -9,7 +9,7 @@
 ### 절차
 ![image](https://user-images.githubusercontent.com/80257035/195516461-33e3f43e-0fd9-47fd-94f4-7a45abdb2d42.png)
 
-===
+---
 
 ### Step 1 : Initialization
 * 각각의 gene에 random number(0과 1 사이의 값)를 부여 
