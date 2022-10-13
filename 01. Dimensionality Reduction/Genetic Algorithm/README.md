@@ -6,6 +6,7 @@
 * Crossover (교배) : 앞 선 세대의 quality가 우수한 유전자들을 섞어 더 좋은 대안이 있는지 탐색
 * Mutation (돌연변이) : local optimum에서 빠져나와서 global optimum으로 갈 수 있는 기회를 만듦
 
+
 ### 절차
 ![image](https://user-images.githubusercontent.com/80257035/195516461-33e3f43e-0fd9-47fd-94f4-7a45abdb2d42.png)
 
@@ -35,6 +36,7 @@
 
 ### Step 3 : Fitness evaluation
 * Fitness Function : 어떤 chromosome이 더 좋은가를 평가하는 기준, Fitness values가 높을 수록 좋은 chromosomes
+
 ex) Fitness function = Adjusted $𝑅^2$
 ![image](https://user-images.githubusercontent.com/80257035/195517807-d4c36d85-c5e2-41a0-8fbf-263d131f42f6.png)
 
@@ -71,7 +73,7 @@ ex) 상위 50% 선택
 * Single Point Crossover Operator : crossover point가 1인 경우
 * Multi-Point Crossover Operator : crossover point가 2개 이상인 경우
 * Uniform Crossover Operator : random number 생성한 후 threshold보다 큰 것만 crossover
-* 
+
 2️⃣ ***Mutation***
 * 목적 : Local optimum에 빠질 수 있는 위험을 제거하고 탈출 할 수 있는 기회를 줌
 * 주의할 점 : 너무 큰 mutation rate를 사용하면 수렴하는 데 시간이 오래 걸림 (0.01정도가 좋음)
